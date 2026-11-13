@@ -24,7 +24,56 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" media="print" onload="this.media = 'all'" />
   </head>
   <body>
-    <h1>Hello World</h1>
-    <img src="images/sample-image.webp" alt="ダミー画像" />
+    <header class="l-header">
+      <a href="" class="l-header__logo"><img src="images/logo.svg" alt="Money Color 対面FP相談サービス" width="312" height="67"></a>
+      <button class="l-header__button no-pc">
+        <span class="l-header__button-line"></span>
+        <span class="l-header__button-line"></span>
+        <span class="l-header__button-line"></span>
+      </button>
+      <nav class="l-nav">
+        <div class="l-nav__inner">
+          <ul class="l-nav__list">
+            <li class="l-nav__list-item">
+              <a href="#worries" class="l-nav__list-link">相談内容</a>
+              <a href="#flow" class="l-nav__list-link">相談の流れ</a>
+              <a href="#point" class="l-nav__list-link">担当FPについて</a>
+              <a href="#review" class="l-nav__list-link">お客様の声</a>
+              <a href="#question" class="l-nav__list-link">よくある質問</a>
+            </li>
+          </ul>
+          <a href="" class="c-reserve-button">
+            <span class="c-reserve-button__text">無料相談を予約する</span>
+            <span class="c-reserve-button__arrow"></span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="l-main">
+      <div class="l-hero">
+        <div class="l-hero__content">
+          <div class="l-hero__catch">
+            <p class="l-hero__catch-text">
+              <picture>
+                <source media="(min-width: 767px)" srcset="image/hero-catch-pc.svg" type="imaegs/svg">
+                <img src="images/hero-catch-sp.svg" alt="お金のこと、そろそろ考えないと・・・" width="333" height="127"></p>
+              </picture>
+            </p>
+          </div>
+          <div class="l-hero__heading">
+            <div class="l-hero__theme">
+              <div class="l-hero__theme-sub">
+                <p class="l-hero__theme-sub-text">
+                  「十人十色<span class="l-hero__theme-sub-text-small">の</span>」<br>
+                  「お金<span class="l-hero__theme__sub-text-small">の</span>悩み」<span class="l-hero__theme__sub-text-small">に寄り添い、</span>
+                </p>
+                <p class="l-hero__theme-main"><span class="l-hero__theme-main-highlight">個々に合ったプラン</span><span l-hero__theme-main-small>を</span>見つける</p>
+              </div>
+            </div>
+            <h1 class="l-hero__title"><img src="images/logo.svg" alt="Money Color 対面FP相談サービス" width=""></h1>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

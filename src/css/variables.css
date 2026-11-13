@@ -19,7 +19,7 @@
 
   /* size */
   --layout-width-min: 375;
-  --layout-width-max: 1440;
+  --layout-width-max: 1400;
   --fluid-ratio-min: calc(1 / var(--layout-width-min) * 100dvi);
   --fluid-ratio-max: calc(1 / var(--layout-width-max) * 100dvi);
   --aspect-video: 16/9;
