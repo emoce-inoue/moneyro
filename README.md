@@ -48,9 +48,19 @@ src/
 │   ├── index.js        # エントリーポイント。
 │   ├── utils.js        # 汎用ユーティリティ。
 │   └── common.js       # ページ共通の処理。
-├── images/             # 画像ファイル
-└── index.html          # HTMLファイル
+├── images/             # 画像ファイル。全ページから images/ で参照する
+├── index.html          # トップページ
+├── thanks.html         # サンクスページ
+└── sales-policy.html   # 販売方針ページ
 ```
+
+## ページの追加
+
+`src/` 直下の HTML ファイルが1ページになる。ファイル名が URL になる（`thanks.html` は `/thanks.html`）。
+
+ページを増やす、または HTML ファイルを削除したときは、開発サーバーを止めて `npm run start` をやり直す。起動時に HTML の一覧を読むため、起動中に追加したファイルはビルド対象に入らない。すでに存在している HTML の本文だけを直したときは、再起動なしで反映される。
+
+CSS と JavaScript は全ページ共通で、`style.css` と `bundle.js` が各 HTML に入る。HTML はサブディレクトリに置かない。`images/` への相対パスがずれる。
 
 # 5.開発について
 
