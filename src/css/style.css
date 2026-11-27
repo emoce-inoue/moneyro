@@ -2,4 +2,6 @@
 @import url('./base.css');
 @import url('./animation.css');
 @import url('./common.css');
-@import url('./layout.css');
+@import url('./top-layout.css');
+@import url('./thanks-layout.css');
+@import url('./solicitation-policy-layout.css');

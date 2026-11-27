@@ -1,8 +1,14 @@
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const createPostcssConfig = require('./config/postcss.config');
+
+const htmlPages = fs
+  .readdirSync(path.resolve(__dirname, 'src'))
+  .filter((fileName) => fileName.endsWith('.html'))
+  .sort();
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -49,7 +55,7 @@ module.exports = (env, argv) => {
       host: '127.0.0.1',
       hot: true,
       open: true,
-      watchFiles: ['src/index.html'],
+      watchFiles: ['src/*.html'],
     },
     module: {
       rules: [
@@ -87,11 +93,15 @@ module.exports = (env, argv) => {
             }),
           ]
         : []),
-      new HtmlWebpackPlugin({
-        template: './src/index.html',
-        inject: 'body',
-        minify: false,
-      }),
+      ...htmlPages.map(
+        (fileName) =>
+          new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', fileName),
+            filename: fileName,
+            inject: 'body',
+            minify: false,
+          }),
+      ),
       new CopyWebpackPlugin({
         patterns: [{ from: 'src/images', to: 'images' }],
       }),

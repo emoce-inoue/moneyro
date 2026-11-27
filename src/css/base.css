@@ -8,14 +8,14 @@
 :where(:root) {
   background-color: var(--background-base);
   color: var(--font-base);
-  font-family: var(--font-sans);
+  font-family: var(--font-mplus);
   font-style: unset;
   font-size: 100%;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
   font-feature-settings: 'pkna';
   text-align: start;
   letter-spacing: var(--tracking-normal);
-  line-height: var(--leading-normal);
+  line-height: var(--leading-medium);
   text-spacing-trim: trim-start;
   word-break: initial;
   line-break: strict;
@@ -91,7 +91,7 @@
 }
 
 :where(img, svg, video) {
-  max-inline-size: 100%;
+  inline-size: 100%;
   block-size: auto;
   object-fit: cover;
 }

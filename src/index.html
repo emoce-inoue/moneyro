@@ -2,15 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>hoge</title>
-    <meta content="hoge" name="description" />
+    <title>十人十色のお金の悩みに寄り添い、個々に合ったプランを見つける | マネイロ</title>
+    <meta content="マネカラーは、保険相談・家計相談・貯蓄方法・資産形成・NISA・iDeCo・教育資金・老後資金・相続対策など、お金に関するあらゆることをファイナンシャルプランナー（FP）に無料でご相談いただけるサービスです。" name="description" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <link href="hoge" rel="canonical" />
+    <link href="https://moneyro.jp/" rel="canonical" />
     <!-- OGP -->
-    <meta content="hoge" property="og:url" />
-    <meta content="hoge" property="og:description" />
-    <meta content="hoge" property="og:site_name" />
-    <meta content="hoge" property="og:title" />
+    <meta content="https://moneyro.jp/" property="og:url" />
+    <meta content="マネカラーは、保険相談・家計相談・貯蓄方法・資産形成・NISA・iDeCo・教育資金・老後資金・相続対策など、お金に関するあらゆることをファイナンシャルプランナー（FP）に無料でご相談いただけるサービスです。" property="og:description" />
+    <meta content="マネイロ" property="og:site_name" />
+    <meta content="十人十色のお金の悩みに寄り添い、個々に合ったプランを見つける | マネイロ" property="og:title" />
     <meta content="website" property="og:type" />
     <meta content="images/og-image.png" property="og:image" />
     <meta content="ja_JP" property="og:locale" />
@@ -20,60 +20,716 @@
     <!-- css/js -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" media="print" onload="this.media = 'all'" />
+    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Quicksand:wght@300..700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Quicksand:wght@300..700&display=swap" media="print" onload="this.media = 'all'" />
   </head>
-  <body>
-    <header class="l-header">
-      <a href="" class="l-header__logo"><img src="images/logo.svg" alt="Money Color 対面FP相談サービス" width="312" height="67"></a>
-      <button class="l-header__button no-pc">
-        <span class="l-header__button-line"></span>
-        <span class="l-header__button-line"></span>
-        <span class="l-header__button-line"></span>
-      </button>
-      <nav class="l-nav">
-        <div class="l-nav__inner">
-          <ul class="l-nav__list">
-            <li class="l-nav__list-item">
-              <a href="#worries" class="l-nav__list-link">相談内容</a>
-              <a href="#flow" class="l-nav__list-link">相談の流れ</a>
-              <a href="#point" class="l-nav__list-link">担当FPについて</a>
-              <a href="#review" class="l-nav__list-link">お客様の声</a>
-              <a href="#question" class="l-nav__list-link">よくある質問</a>
-            </li>
-          </ul>
-          <a href="" class="c-reserve-button">
-            <span class="c-reserve-button__text">無料相談を予約する</span>
-            <span class="c-reserve-button__arrow"></span>
-          </a>
-        </div>
-      </nav>
+  <body class="l-body">
+    <header class="l-header js-anchor-link">
+      <div class="l-header__inner">
+        <a href="/" class="l-header__logo"><img src="images/common/logo.svg" alt="Money Color 対面FP相談サービス" width="312" height="67" /></a>
+        <button type="button" class="l-header__open-button no-pc" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu">
+          <span class="l-header__open-button-inner">
+            <span class="l-header__open-button-line"></span>
+            <span class="l-header__open-button-line"></span>
+            <span class="l-header__open-button-line"></span>
+          </span>
+        </button>
+        <dialog id="menu" class="l-menu" aria-label="メニュー">
+          <button type="button" class="l-header__close-button no-pc" aria-label="メニューを閉じる" aria-expanded="true" aria-controls="menu">
+            <span class="l-header__close-button-inner"></span>
+          </button>
+          <div class="l-menu__content">
+            <nav class="l-nav">
+              <ul class="l-nav__list">
+                <li class="l-nav__list-item"><a href="#worries" class="l-nav__list-link js-scroll-link">相談内容</a></li>
+                <li class="l-nav__list-item"><a href="#flow" class="l-nav__list-link js-scroll-link">相談の流れ</a></li>
+                <li class="l-nav__list-item"><a href="#fp" class="l-nav__list-link js-scroll-link">担当FPについて</a></li>
+                <li class="l-nav__list-item"><a href="#voice" class="l-nav__list-link js-scroll-link">お客様の声</a></li>
+                <li class="l-nav__list-item"><a href="#qa" class="l-nav__list-link js-scroll-link">よくある質問</a></li>
+              </ul>
+            </nav>
+            <a href="#contact" class="c-reserve-button c-reserve-button--header js-scroll-link">
+              <span class="c-reserve-button__text c-reserve-button__text--header">無料相談を予約する</span>
+              <span class="c-reserve-button__arrow c-reserve-button__arrow--header"></span>
+            </a>
+          </div>
+        </dialog>
+      </div>
     </header>
-    <main class="l-main">
-      <div class="l-hero">
-        <div class="l-hero__content">
-          <div class="l-hero__catch">
-            <p class="l-hero__catch-text">
+
+    <main class="l-main l-main--top">
+      <div class="p-top__hero">
+        <div class="p-top__hero-content">
+          <div class="p-top__hero-catch">
+            <p class="p-top__hero-catch-text">
               <picture>
-                <source media="(min-width: 767px)" srcset="image/hero-catch-pc.svg" type="imaegs/svg">
-                <img src="images/hero-catch-sp.svg" alt="お金のこと、そろそろ考えないと・・・" width="333" height="127"></p>
+                <source media="(min-width: 768px)" srcset="images/top/hero-catch-pc.webp" type="image/webp" />
+                <img src="images/top/hero-catch-sp.webp" alt="お金のこと、そろそろ考えないと・・・" width="333" height="127" />
               </picture>
             </p>
+            <div class="p-top__hero-catch-illust no-sp">
+              <div class="p-top__hero-catch-illust-image"><img src="images/top/hero-illust-boy.webp" alt="男の子のイラスト" width="126" height="126" /></div>
+              <div class="p-top__hero-catch-illust-deco"><img src="images/top/deco-moyamoya.webp" alt="悩んでいるデコレーション" width="23" height="23" /></div>
+            </div>
           </div>
-          <div class="l-hero__heading">
-            <div class="l-hero__theme">
-              <div class="l-hero__theme-sub">
-                <p class="l-hero__theme-sub-text">
-                  「十人十色<span class="l-hero__theme-sub-text-small">の</span>」<br>
-                  「お金<span class="l-hero__theme__sub-text-small">の</span>悩み」<span class="l-hero__theme__sub-text-small">に寄り添い、</span>
-                </p>
-                <p class="l-hero__theme-main"><span class="l-hero__theme-main-highlight">個々に合ったプラン</span><span l-hero__theme-main-small>を</span>見つける</p>
+          <div class="p-top__hero-heading">
+            <div class="p-top__hero-theme">
+              <p class="p-top__hero-theme-line p-top__hero-theme-line--top">十人十色の</p>
+              <p class="p-top__hero-theme-line p-top__hero-theme-line--center"><span class="p-top__hero-theme-highlight">「お金の悩み」</span>に寄り添い、</p>
+              <p class="p-top__hero-theme-line p-top__hero-theme-line--bottom"><span class="p-top__hero-theme-marker">個々に合ったプラン</span>を見つける</p>
+            </div>
+            <h1 class="p-top__hero-title"><img src="images/common/logo.svg" alt="Money Color 対面FP相談サービス" width="" /></h1>
+            <div class="p-top__hero-deco">
+              <span class="p-top__hero-deco-image"><img src="images/top/icon-yen.svg" alt="円マーク" width="35" height="37" /></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-top__hero-works">
+          <div class="p-top__hero-works-list">
+            <div class="p-top__hero-works-item">
+              <div class="p-top__hero-works-icon">
+                <div class="p-top__hero-works-icon-image"><img src="images/top/icon-check.svg" alt="チェックマーク" width="33" height="27" /></div>
+              </div>
+              <div class="p-top__hero-works-item-inner">
+                <p class="p-top__hero-works-heading">相談実績</p>
+                <p class="p-top__hero-works-number p-top__hero-works-number--first"
+                  >200<span class="p-top__hero-works-number-small">万<br class="no-pc" />件</span></p
+                >
               </div>
             </div>
-            <h1 class="l-hero__title"><img src="images/logo.svg" alt="Money Color 対面FP相談サービス" width=""></h1>
+            <div class="p-top__hero-works-item p-top__hero-works-item--center">
+              <div class="p-top__hero-works-icon">
+                <div class="p-top__hero-works-icon-image"><img src="images/top/icon-check.svg" alt="チェックマーク" width="33" height="27" /></div>
+              </div>
+              <div class="p-top__hero-works-item-inner">
+                <p class="p-top__hero-works-heading">取扱保険会社</p>
+                <p class="p-top__hero-works-number"><span class="p-top__hero-works-number-medium">約</span>50<span class="p-top__hero-works-number-medium">社</span></p>
+              </div>
+            </div>
+            <div class="p-top__hero-works-item">
+              <div class="p-top__hero-works-icon">
+                <div class="p-top__hero-works-icon-image"><img src="images/top/icon-check.svg" alt="チェックマーク" width="33" height="27" /></div>
+              </div>
+              <div class="p-top__hero-works-item-inner">
+                <p class="p-top__hero-works-heading">平均<span class="f-quick">FP</span>歴</p>
+                <p class="p-top__hero-works-number">11<span class="p-top__hero-works-number-large">年</span></p>
+              </div>
+            </div>
+          </div>
+          <p class="p-top__hero-works-note">※2025年5月時点 保険代理店 フィナンシャル・エージェンシー実績</p>
+        </div>
+        <div class="p-top__hero-illust p-top__hero-illust--family">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/top/hero-family-pc.webp" type="image/webp" />
+            <img src="images/top/hero-family-sp.webp" alt="Money Color" width="300" height="251" />
+          </picture>
+        </div>
+        <div class="p-top__hero-illust p-top__hero-illust--men no-sp"><img src="images/top/hero-men.webp" alt="Money Color" width="416" height="416" /></div>
+        <div class="p-top__hero-illust p-top__hero-illust--women no-sp"><img src="images/top/illust-women.webp" alt="女性オペレーターのイラスト" width="226" height="298" /></div>
+      </div>
+
+      <div class="p-top__cta">
+        <div class="p-top__cta-inner">
+          <div class="p-top__cta-box">
+            <div class="no-sp">
+              <p class="p-top__cta-box-catch">＼ カンタン<span class="p-top__cta-box-catch-number">60</span>秒! ／</p>
+            </div>
+            <a href="#contact" class="c-reserve-button js-scroll-link">
+              <span class="c-reserve-button__text">無料相談を予約する</span>
+              <span class="c-reserve-button__arrow"></span>
+            </a>
+          </div>
+          <div class="p-top__cta-box">
+            <div class="no-sp">
+              <p class="p-top__cta-box-catch">＼ まずは<span class="p-top__cta-box-catch-jp">チェック</span>秒! ／</p>
+            </div>
+            <a href="#flow" class="c-flow-button js-scroll-link">
+              <span class="c-flow-button__text">相談の流れを見る</span>
+              <span class="c-flow-button__arrow"></span>
+            </a>
           </div>
         </div>
       </div>
+
+      <div class="l-content">
+        <section id="worries" class="p-top__section p-top__section--worries p-worries">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Worries</h3>
+              <h2 class="p-top__section-header-jp">こんなお悩みありませんか？</h2>
+            </div>
+            <div class="p-worries__list">
+              <div class="p-worries__list-item p-worries__list-item--yellow">
+                <div class="p-worries__list-illust p-worries__list-illust--first">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--first"><img src="images/top/worries-illust1.webp" alt="女性のイラスト" width="71" height="121" /></div>
+                </div>
+                <p class="p-worries__list-text">
+                  物価高で<br class="no-sp" /><span class="p-worries__list-text-highlight">家計が厳しい･･･</span><br />
+                  なんとかしたい
+                </p>
+              </div>
+              <div class="p-worries__list-item p-worries__list-item--blue">
+                <div class="p-worries__list-illust p-worries__list-illust--second p-worries__list-illust--even">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--second"><img src="images/top/worries-illust2.webp" alt="男性のイラスト" width="84" height="122" /></div>
+                </div>
+                <p class="p-worries__list-text p-worries__list-text--even">
+                  <span class="p-worries__list-text-highlight">資産形成が<br class="no-sp" />気になる</span>けど、<br />
+                  よくわからない
+                </p>
+              </div>
+              <div class="p-worries__list-item p-worries__list-item--purple">
+                <div class="p-worries__list-illust p-worries__list-illust--third">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--third"><img src="images/top/worries-illust3.webp" alt="女性のイラスト" width="92" height="117" /></div>
+                </div>
+                <p class="p-worries__list-text">
+                  <span class="p-worries__list-text-highlight">子どもの<br class="no-sp" />教育資金</span>、<br />
+                  どうしよう？
+                </p>
+              </div>
+              <div class="p-worries__list-item p-worries__list-item--red">
+                <div class="p-worries__list-illust p-worries__list-illust--forth p-worries__list-illust--even">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--forth"><img src="images/top/worries-illust4.webp" alt="男性のイラスト" width="92" height="120" /></div>
+                </div>
+                <p class="p-worries__list-text p-worries__list-text--even">
+                  <span class="p-worries__list-text-highlight">老後のこと</span>、<br />
+                  そろそろ本気で<br class="no-sp" />考えないと
+                </p>
+              </div>
+              <div class="p-worries__list-item p-worries__list-item--orange">
+                <div class="p-worries__list-illust p-worries__list-illust--fifth">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--fifth"><img src="images/top/worries-illust5.webp" alt="女性のイラスト" width="79" height="124" /></div>
+                </div>
+                <p class="p-worries__list-text">
+                  お金のことを<br />
+                  <span class="p-worries__list-text-highlight">相談できる<br class="no-sp" />人がいない</span>
+                </p>
+              </div>
+              <div class="p-worries__list-item p-worries__list-item--blue">
+                <div class="p-worries__list-illust p-worries__list-illust--fixth p-worries__list-illust--even">
+                  <div class="p-worries__list-illust-image p-worries__list-illust-image--sixth"><img src="images/top/worries-illust6.webp" alt="男性のイラスト" width="95" height="119" /></div>
+                </div>
+                <p class="p-worries__list-text p-worries__list-text--even">
+                  将来に向けて<br />
+                  <span class="p-worries__list-text-highlight">どれくらい<br class="no-sp" />貯蓄できる？</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-worries__message">
+              <p class="p-worries__message-text"> 就職、結婚、出産、教育、老後･･･<br /> </p>
+              <p class="p-worries__message-text p-worries__message-text--bottom">
+                人生の変化とともに気になるのは
+                <span class="p-worries__message-highlight">お金のこと。</span>
+              </p>
+            </div>
+            <div class="p-worries__outro">
+              <div class="p-worries__outro-inner">
+                <div class="p-worries__outro-content">
+                  <p class="p-worries__outro-catch">
+                    <span class="p-worries__outro-catch-text">こうしたお悩みは、すべて</span>
+                  </p>
+                  <p class="p-worries__outro-logo">
+                    <span class="p-worries__outro-logo-image"><img src="images/common/logo.svg" alt="Money Color 対面FP相談サービス" width="545" height="119" /></span><span class="p-worries__outro-logo-text">に</span>
+                  </p>
+                  <p class="p-worries__outro-text">おまかせください！</p>
+                  <div class="p-worries__outro-illust"><img src="images/top/illust-women.webp" alt="女性FPのイラスト" width="157" height="204" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reason" class="p-top__section p-top__section--reason p-reason">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Reason</h3>
+              <h2 class="p-top__section-header-jp p-top__section-header-jp--image"
+                ><span class="p-top__section-header-jp-logo"><img src="images/common/logo-short.svg" alt="Money Color" width="327" height="54" /></span>が選ばれる理由</h2
+              >
+            </div>
+            <p class="p-reason__theme">多くのお客様に選ばれてきた、<br class="no-pc" />確かな実績があります。</p>
+            <div class="p-reason__list-box">
+              <ul class="p-reason__list">
+                <li class="p-reason__list-item p-reason__list-item--first">
+                  <div class="p-reason__list-icon"><img src="images/top/reason-crown.webp" alt="王冠アイコン" width="42" height="34" /></div>
+                  <div class="p-reason__list-item-inner">
+                    <p class="p-reason__list-heading">相談実績</p>
+                    <p class="p-reason__list-text p-reason__list-text--first">
+                      <span class="p-reason__list-text-inner p-reason__list-text-inner--first"
+                        >200<span class="p-reason-list-text-small">万<br />件</span></span
+                      >
+                    </p>
+                    <p class="p-reason__list-note no-pc">※2025年5月時点 保険代理店<br />フィナンシャル・エージェンシー実績</p>
+                  </div>
+                  <p class="p-reason__list-strong">確かな相談実績</p>
+                </li>
+                <li class="p-reason__list-item p-reason__list-item--second">
+                  <div class="p-reason__list-icon"><img src="images/top/reason-crown.webp" alt="王冠アイコン" width="42" height="34" /></div>
+                  <div class="p-reason__list-item-inner p-reason__list-item-inner--second">
+                    <p class="p-reason__list-heading">取扱保険会社</p>
+                    <p class="p-reason__list-text p-reason__list-text--second">
+                      <span class="p-reason__list-text-inner p-reason__list-text-inner--first"><span class="p-reason__list-text-large">約</span>50<span class="p-reason__list-text-large">社</span></span>
+                    </p>
+                    <p class="p-reason__list-note no-pc">※2025年5月時点 保険代理店<br class="no-pc" />フィナンシャル・エージェンシー実績</p>
+                  </div>
+                  <p class="p-reason__list-strong">幅広い商品から比較</p>
+                </li>
+                <li class="p-reason__list-item p-reason__list-item--third">
+                  <div class="p-reason__list-icon"><img src="images/top/reason-crown.webp" alt="王冠アイコン" width="42" height="34" /></div>
+                  <div class="p-reason__list-item-inner">
+                    <p class="p-reason__list-heading">平均<span class="f-quick">FP</span>歴</p>
+                    <p class="p-reason__list-text p-reason__list-text--third">
+                      <span class="p-reason__list-text-inner p-reason__list-text-inner--first">11<span class="p-reason__list-text-large">年</span></span>
+                    </p>
+                    <p class="p-reason__list-note no-pc">※保険代理店 フィナンシャル・エージェンシー実績</p>
+                  </div>
+                  <p class="p-reason__list-strong">経験豊富なFPが対応</p>
+                </li>
+              </ul>
+              <p class="p-reason__list-note no-sp">※2025年5月時点 保険代理店フィナンシャル・エージェンシー実績</p>
+              <div class="p-reason__grass p-reason__grass--left no-sp"><img src="images/top/reason-grass-left.webp" alt="葉っぱのイラスト" aria-hidden="true" width="83" height="143" /></div>
+              <div class="p-reason__grass p-reason__grass--right no-sp"><img src="images/top/reason-grass-right.webp" alt="葉っぱのイラスト" aria-hidden="true" width="83" height="143" /></div>
+              <div class="p-reason__twinkle p-reason__twinkle--first no-sp"><img src="images/top/reason-kirakira.webp" alt="きらきらのイラスト" width="32" height="25" /></div>
+              <div class="p-reason__twinkle p-reason__twinkle--second no-sp"><img src="images/top/reason-kirakira.webp" alt="きらきらのイラスト" width="32" height="25" /></div>
+              <div class="p-reason__twinkle p-reason__twinkle--third no-sp"><img src="images/top/reason-kirakira.webp" alt="きらきらのイラスト" width="32" height="25" /></div>
+              <div class="p-reason__twinkle p-reason__twinkle--forth no-sp"><img src="images/top/reason-kirakira.webp" alt="きらきらのイラスト" width="32" height="25" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-top__section p-top__section--money p-money">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Point</h3>
+              <h2 class="p-top__section-header-jp p-top__section-header-jp--image"
+                ><span class="p-top__section-header-jp-logo p-top__section-header-jp-logo--point"><img src="images/common/logo-short.svg" alt="Money Color" width="327" height="54" /></span>なら、あらゆる<br class="no-pc" />お金のご相談に対応可能</h2
+              >
+            </div>
+            <ul class="p-money__list">
+              <li class="p-money__list-item p-money__list-item--first">
+                <p class="p-money__list-number">01</p>
+                <div class="p-money__list-image"><img src="images/top/money-1.webp" alt="家計・貯蓄の見直し" width="130" height="130" /></div>
+                <p class="p-money__list-text">家計・貯蓄の見直し</p>
+              </li>
+              <li class="p-money__list-item p-money__list-item--second">
+                <p class="p-money__list-number">02</p>
+                <div class="p-money__list-image"><img src="images/top/money-2.webp" alt="保険の見直し・保障設計" width="130" height="130" /></div>
+                <p class="p-money__list-text">保険の見直し・<br />保障設計</p>
+              </li>
+              <li class="p-money__list-item p-money__list-item--third">
+                <p class="p-money__list-number">03</p>
+                <div class="p-money__list-image"><img src="images/top/money-3.webp" alt="教育資金の準備" width="130" height="130" /></div>
+                <p class="p-money__list-text">教育資金の準備</p>
+              </li>
+              <li class="p-money__list-item p-money__list-item--forth">
+                <p class="p-money__list-number">04</p>
+                <div class="p-money__list-image"><img src="images/top/money-4.webp" alt="老後資金の計画" width="130" height="130" /></div>
+                <p class="p-money__list-text">老後資金の計画</p>
+              </li>
+              <li class="p-money__list-item p-money__list-item--fifth">
+                <p class="p-money__list-number">05</p>
+                <div class="p-money__list-image"><img src="images/top/money-5.webp" alt="資産形成(NISA・iDeCoなど)" width="130" height="130" /></div>
+                <p class="p-money__list-text">
+                  <span>資産形成<br />(<span class="f-quick">NISA・iDeCo</span>など)</span>
+                </p>
+              </li>
+              <li class="p-money__list-item p-money__list-item--sixth">
+                <p class="p-money__list-number">06</p>
+                <div class="p-money__list-image"><img src="images/top/money-6.webp" alt="相続・お金の終活" width="130" height="130" /></div>
+                <p class="p-money__list-text">相続・お金の終活</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="p-top__section p-top__section--lifeplan p-lifeplan">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Point</h3>
+              <h2 class="p-top__section-header-jp">まずはあなたの<br class="no-pc" />理想のライフプランを<br class="no-pc" />お聞かせください</h2>
+            </div>
+            <div class="p-lifeplan__list">
+              <div class="p-lifeplan__list-item">
+                <div class="p-lifeplan__list-image p-lifeplan__list-image--lupe"><img src="images/top/lifeplan-illust-lupe.webp" alt="虫めがねのイラスト" width="138" height="143" /></div>
+                <div class="p-lifeplan__list-text-box">
+                  <p class="p-lifeplan__list-heading">ライフプラン表で<br />将来のお金の動きを確認</p>
+                  <p class="p-lifeplan__list-text">家族の年齢に合わせて、<br />現在から将来に向けた家計の変化を表に書き出します。</p>
+                </div>
+              </div>
+              <div class="p-lifeplan__list-item">
+                <div class="p-lifeplan__list-image p-lifeplan__list-image--man"><img src="images/top/lifeplan-illust-man.webp" alt="男性のイラスト" width="157" height="158" /></div>
+                <div class="p-lifeplan__list-text-box">
+                  <p class="p-lifeplan__list-heading">将来のキャッシュフローを<br />シミュレーション</p>
+                  <p class="p-lifeplan__list-text">生活スタイルに合わせて必要な老後資金など、将来の収支イメージをグラフで確認します。</p>
+                </div>
+              </div>
+              <div class="p-lifeplan__list-item p-lifeplan__list-item--graph">
+                <div class="p-lifeplan__list-image p-lifeplan__list-image--graph">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="images/top/lifeplan-graph-pc.webp" type="image/webp" />
+                    <img src="images/top/lifeplan-graph-sp.webp" alt="ライフプラン表" width="690" height="1116" />
+                  </picture>
+                </div>
+              </div>
+              <p class="p-lifeplan__list-note"
+                >※本資料は、総務省統計局「家計調査（家計収支編）2025年（令和7年）平均結果の概要」　や国税庁「令和7年分
+                民間給与実態統計調査」等の統計データをもとに、架空のモデル世帯（変動金利・物価上昇率0%・運用利回り0%などを仮定）を設定して当社が試算したサンプル（イメージ）です。記載の手取り年収や支出、将来の年金受給額などは概算であり、特定の公的制度の適用や将来の収支・貯蓄額を保証するものではありません。お客さま個人の収支状況やライフプランによって結果は大きく異なります。</p
+              >
+              <div class="p-lifeplan__list-illust no-sp"><img src="images/top/lifeplan-illust-woman.webp" alt="女性のイラスト" width="123" height="266" /></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="flow" class="p-top__section p-top__section--flow p-flow">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Flow</h3>
+              <h2 class="p-top__section-header-jp">じっくり丁寧に。<br class="no-pc" />無料相談の流れ</h2>
+            </div>
+            <ol class="p-flow__list">
+              <li class="p-flow__list-item">
+                <div class="p-flow__list-item-inner">
+                  <div class="p-flow__list-illust p-flow__list-illust--first">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/top/flow-illust1-pc.webp" type="image/webp" />
+                      <img src="images/top/flow-illust1-sp.webp" alt="カレンダーのイラスト" width="155" height="155" />
+                    </picture>
+                  </div>
+                  <div class="p-flow__list-text-box">
+                    <div class="l-lflow__list-heading">
+                      <p class="p-flow__list-index">01</p>
+                      <p class="p-flow__list-title">予約</p>
+                    </div>
+                    <p class="p-flow__list-text">フォームから希望日時を入力(<span class="f-quick">24</span>時間受付)</p>
+                    <p class="p-flow__list-note">※予約後、担当FPより<br class="no-pc" />ご連絡のお電話を差し上げます</p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-flow__list-item">
+                <div class="p-flow__list-item-inner">
+                  <div class="p-flow__list-illust p-flow__list-illust--second">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/top/flow-illust2-pc.webp" type="image/webp" />
+                      <img src="images/top/flow-illust2-sp.webp" alt="ヒアリングのイラスト" width="155" height="155" />
+                    </picture>
+                  </div>
+                  <div class="p-flow__list-text-box">
+                    <div class="l-lflow__list-heading">
+                      <p class="p-flow__list-index">02</p>
+                      <p class="p-flow__list-title">ヒアリング</p>
+                    </div>
+                    <p class="p-flow__list-text">対面/オンラインで<br class="no-pc" />現状と理想のライフプランを伺います</p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-flow__list-item">
+                <div class="p-flow__list-item-inner">
+                  <div class="p-flow__list-illust p-flow__list-illust--third">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/top/flow-illust3-pc.webp" type="image/webp" />
+                      <img src="images/top/flow-illust3-sp.webp" alt="プランニングのイラスト" width="155" height="155" />
+                    </picture>
+                  </div>
+                  <div class="p-flow__list-text-box">
+                    <div class="l-lflow__list-heading">
+                      <p class="p-flow__list-index">03</p>
+                      <p class="p-flow__list-title">プランニング</p>
+                    </div>
+                    <p class="p-flow__list-text">ヒアリングをもとにライフプラン表・<br class="no-pc" />キャッシュフロー計算書を作成</p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-flow__list-item">
+                <div class="p-flow__list-item-inner">
+                  <div class="p-flow__list-illust p-flow__list-illust--forth">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="images/top/flow-illust4-pc.webp" type="image/webp" />
+                      <img src="images/top/flow-illust4-sp.webp" alt="アドバイスのイラスト" width="155" height="155" />
+                    </picture>
+                  </div>
+                  <div class="p-flow__list-text-box">
+                    <div class="l-lflow__list-heading">
+                      <p class="p-flow__list-index">04</p>
+                      <p class="p-flow__list-title">アドバイス</p>
+                    </div>
+                    <p class="p-flow__list-text"><span class="f-quick">FP</span>の専門的視点からご意向に沿った<br class="no-pc" />プランをご提案</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="fp" class="p-top__section p-top__section--fp p-fp">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header p-top__section-header--white">
+              <h3 class="p-top__section-header-en p-top__section-header-en--white">Point</h3>
+              <h2 class="p-top__section-header-jp p-top__section-header-jp--white">ファイナンシャルプランナー<br class="no-pc" />だからこそ<br />相談できることがあります</h2>
+            </div>
+            <div class="p-fp__list">
+              <div class="p-fp__list-item p-fp__list-item--first">
+                <div class="p-fp__list-text-box p-fp__list-text-box--first">
+                  <p class="p-fp__list-theme p-fp__list-theme--large">
+                    保険相談だけでなく、<br class="no-pc" />ライフプランや資産管理など、<br />
+                    <span class="p-fp__list-theme-highlight">お金を総合的に相談できるのがFPです。</span>
+                  </p>
+                  <p class="p-fp__list-text p-fp__list-text--large">
+                    家計のチェックから<br class="no-pc" />将来のキャッシュフロー計算まで、<br />
+                    専門的視点で丁寧にアドバイスします。
+                  </p>
+                </div>
+                <div class="p-fp__list-illust">
+                  <div class="p-fp__list-illust-image"><img src="images/top/fp-illust1.webp" alt="男性FPのイラスト" width="153" height="148" /></div>
+                  <div class="p-fp__list-illust-tag">
+                    <p class="p-fp__list-illust-tag-text">平均<span class="f-quick">FP</span>歴<span class="f-quick">11</span>年</p>
+                  </div>
+                  <p class="p-fp__list-illust-text">経験豊富な<span class="f-quick">FP</span>がマンツーマンで対応</p>
+                </div>
+              </div>
+              <div class="p-fp__list-item p-fp__list-item--second">
+                <div class="p-fp__list-image"><img src="images/top/fp-illust2.webp" alt="お約束01" width="175" height="175" /></div>
+                <p class="p-fp__list-heading">お約束.<span class="p-fp__list-heading-number">01</span></p>
+                <div class="p-fp__list-text-box">
+                  <p class="p-fp__list-theme">相談は何度でも無料</p>
+                  <p class="p-fp__list-text">
+                    初期費用・相談料は<br />
+                    一切かかりません
+                  </p>
+                </div>
+              </div>
+              <div class="p-fp__list-item p-fp__list-item--third">
+                <div class="p-fp__list-image"><img src="images/top/fp-illust3.webp" alt="お約束02" width="175" height="175" /></div>
+                <p class="p-fp__list-heading">お約束.<span class="p-fp__list-heading-number">02</span></p>
+                <div class="p-fp__list-text-box">
+                  <p class="p-fp__list-theme">強引な勧誘は<br class="no-pc" />いたしません</p>
+                  <p class="p-fp__list-text"> 無理な営業は<br class="no-pc" />行いません </p>
+                </div>
+              </div>
+              <div class="p-fp__list-item p-fp__list-item--forth">
+                <div class="p-fp__list-image"><img src="images/top/fp-illust4.webp" alt="お約束03" width="175" height="175" /></div>
+                <p class="p-fp__list-heading">お約束.<span class="p-fp__list-heading-number">03</span></p>
+                <div class="p-fp__list-text-box">
+                  <p class="p-fp__list-theme">専門的な立場で<br class="no-pc" />ご提案</p>
+                  <p class="p-fp__list-text"> 取り扱いのある<br class="no-pc" />複数社から<br class="no-sp" />ご意向に<br class="no-pc" />沿った選択肢をご紹介 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-top__section p-top__section--area p-area">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Point</h3>
+              <h2 class="p-top__section-header-jp">時間も場所も自由を選べる</h2>
+            </div>
+            <div class="p-area__list">
+              <div class="p-area__list-item">
+                <div class="p-area__list-image"><img loading="lazy" src="images/top/area-img1.webp" alt="ご自宅でのイラスト" width="313" height="203" /></div>
+                <p class="p-area__list-heading">ご自宅</p>
+                <p class="p-area__list-text">リラックスした環境で</p>
+              </div>
+              <div class="p-area__list-item">
+                <div class="p-area__list-image"><img loading="lazy" src="images/top/area-img2.webp" alt="カフェでのイラスト" width="313" height="203" /></div>
+                <p class="p-area__list-heading">カフェ</p>
+                <p class="p-area__list-text">お出かけのついでに</p>
+              </div>
+              <div class="p-area__list-item">
+                <div class="p-area__list-image"><img loading="lazy" src="images/top/area-img3.webp" alt="職場でのイラスト" width="313" height="203" /></div>
+                <p class="p-area__list-heading">職場</p>
+                <p class="p-area__list-text">お仕事の合間に</p>
+              </div>
+            </div>
+            <div class="p-area__schedule-list">
+              <div class="p-area__schedule-list-item p-area__schedule-list-item--first">
+                <div class="p-area__schedule-list-icon"></div>
+                <p class="p-area__schedule-list-text p-area__schedule-list-text--first">基本は<br class="no-pc" />対面面談</p>
+              </div>
+              <div class="p-area__schedule-list-item p-area__schedule-list-item--second">
+                <div class="p-area__schedule-list-icon"></div>
+                <p class="p-area__schedule-list-text p-area__schedule-list-text--second">平日・<br class="no-pc" />土日祝対応</p>
+              </div>
+              <div class="p-area__schedule-list-item p-area__schedule-list-item--third">
+                <div class="p-area__schedule-list-icon"></div>
+                <p class="p-area__schedule-list-text p-area__schedule-list-text--third"><span class="f-quick">20</span>時以降の<br class="no-pc" />面談も可</p>
+              </div>
+              <div class="p-area__schedule-list-item p-area__schedule-list-item--forth">
+                <div class="p-area__schedule-list-icon"></div>
+                <p class="p-area__schedule-list-text p-area__schedule-list-text--forth">全国どこでも<br class="no-pc" />対応</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="voice" class="p-top__section p-top__section--voice p-voice">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Voice</h3>
+              <h2 class="p-top__section-header-jp">相談してみて良かった！<br class="no-pc" />お客様の声</h2>
+            </div>
+            <div class="p-voice__heading">
+              <p class="p-voice__heading-main">保険代理店フィナンシャル・エージェンシーの<br class="no-pc" />FPと面談した方の声</p>
+              <p class="p-voice__heading-sub">※個人の感想の一部となり、<br class="no-pc" />相談結果やサービスの品質を保証するものではありません</p>
+            </div>
+            <div class="p-voice__list">
+              <div class="p-voice__list-item">
+                <div class="p-voice__list-image"><img loading="lazy" src="images/top/voice-img1.webp" alt="女性のイラスト" width="188" height="188" /></div>
+                <p class="p-voice__list-profile"><span class="f-quick">20</span>代女性／埼玉県</p>
+                <p class="p-voice__list-text">
+                  これまで保険について調べていたものの、自分では分かり兼ねる事や今の自分の収入だと<br />
+                  <span class="p-voice__list-text-highlight">どのような保険に加入すれば良いか分からなかった所が多く、相談が出来てとても安心しました。</span>
+                </p>
+              </div>
+              <div class="p-voice__list-item">
+                <div class="p-voice__list-image"><img loading="lazy" src="images/top/voice-img2.webp" alt="男性のイラスト" width="188" height="188" /></div>
+                <p class="p-voice__list-profile"><span class="f-quick">30</span>代男性／東京都</p>
+                <p class="p-voice__list-text">
+                  内容も丁寧で分かりやすく説明していただき今後の動き方の目処がついた。<br />
+                  <span class="p-voice__list-text-highlight">疑問点などにきちんと丁寧に説明いただき自分の中でイメージを具体化できとても良かったです。</span>
+                </p>
+              </div>
+              <div class="p-voice__list-item">
+                <div class="p-voice__list-image"><img loading="lazy" src="images/top/voice-img3.webp" alt="女性のイラスト" width="188" height="188" /></div>
+                <p class="p-voice__list-profile"><span class="f-quick">50</span>代女性／神奈川県</p>
+                <p class="p-voice__list-text">
+                  <span class="p-voice__list-text-highlight">担当してくださった方は私の心配な点や、必要な事を分かりやすく説明してくれました。</span><br />
+                  結局新規での契約はしませんでしたが、私的にはとても満足できるお話の内容だったので、今回相談させていただいて良かったと思っています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="qa" class="p-top__section p-top__section--qa p-qa">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Question</h3>
+              <h2 class="p-top__section-header-jp">よくある質問</h2>
+            </div>
+            <ul class="p-qa__list">
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">相談は本当に無料ですか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text">
+                      <span class="p-qa__answer-text-highlight">はい、何度でも無料で<br class="no-pc" />ご利用いただけます！</span><br />
+                      当社は保険会社からの契約手数料などで運営しているため、お客様から相談料をいただくことは一切ございません。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">来ていただく際の交通費・出張費などは無料ですか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text"> <span class="p-qa__answer-text-highlight">はい、相談料・出張費ともに無料です。</span><br class="no-pc" />対応エリア内であれば一切の追加費用は発生しません。 </p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">所要時間はどれくらいですか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text">
+                      <span class="p-qa__answer-text-highlight"><span class="f-quick">1</span>回あたり、およそ<span class="f-quick">1〜2</span>時間くらいです。</span><br />
+                      ライフプランのことなどを詳しくお聞きする場合があるので、ある程度のお時間は必要になります。延長料金は一切かかりません。
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">子どもと一緒に行ける場所でも相談できますか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text"> <span class="p-qa__answer-text-highlight">お子さまとの一緒のご相談も大歓迎です。</span><br class="no-pc" />ご希望があれば、お子さまが落ち着くご自宅への出張も可能です。 </p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">強引な営業はありませんか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text"> <span class="p-qa__answer-text-highlight">一切ございません。</span><br class="no-pc" />お客様のペースを最優先に、じっくりと検討していただけるよう配慮しています。 </p>
+                  </div>
+                </div>
+              </li>
+              <li class="p-qa__list-item">
+                <div class="p-qa__list-item-inner">
+                  <div class="p-qa__question">
+                    <p class="p-qa__question-text">個人情報は安全ですか？</p>
+                  </div>
+                  <div class="p-qa__answer">
+                    <p class="p-qa__answer-text"> <span class="p-qa__answer-text-highlight">SSL暗号化により安全に保護されています</span><br class="no-pc" />のでご安心ください。 </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contact" class="p-top__section p-top__section--contact p-contact">
+          <div class="p-top__section-inner">
+            <div class="p-top__section-header">
+              <h3 class="p-top__section-header-en">Contact</h3>
+              <h2 class="p-top__section-header-jp">まずは無料で、<br class="no-pc" />あなたのプランを<br class="no-pc" />相談してみませんか？</h2>
+            </div>
+            <div class="formrun-embed" data-formrun-form="@fa-human-resources-uS2saeaQLepPnUE0TsQV" data-formrun-redirect="true"> </div>
+          </div>
+        </section>
+      </div>
     </main>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner">
+        <p class="l-footer__heading">運営会社 株式会社フィナンシャル・エージェンシー</p>
+        <div class="l-footer__group l-footer__group--first">
+          <div class="l-footer__textarea">
+            <p class="l-footer__text"> この度、株式会社フィナンシャル・エージェンシーは生命保険協会による乗合代理店業務品質調査の結果、<br class="no-sp" />評価基準の基本項目をすべて達成しました。<span class="f-quick">（2029/3/31迄有効）</span><br /></p>
+          </div>
+        </div>
+        <div class="l-footer__group l-footer__group--second">
+          <div class="l-footer__textarea">
+            <p class="l-footer__text">詳細はこちらをご確認ください</p>
+            <a href="https://www.seiho.or.jp/quality_result/list/" target="_blank" rel="opener" class="l-footer__textarea-link">https://www.seiho.or.jp/quality_result/list/</a>
+          </div>
+          <div class="l-footer__textarea">
+            <p class="l-footer__text">販売方針について</p>
+            <a href="https://moneyro.jp/solicitation-policy" target="_blank" rel="opener" class="l-footer__textarea-link">https://moneyro.jp/solicitation-policy</a>
+          </div>
+        </div>
+        <div class="l-footer__group l-footer__group--third">
+          <div class="l-footer__textarea">
+            <p class="l-footer__text">
+              フィナンシャル・エージェンシーは、高度な情報セキュリティ体制を実現するため、<br class="no-sp" />情報セキュリティ管理の国際規格である情報セキュリティマネジメントシステム「<span class="f-quick">ISO/IEC27001</span>」および、<br class="no-sp" />プライバシーマーク「<span class="f-quick">JISQ 15001</span>」の認証を取得しております。
+            </p>
+          </div>
+        </div>
+        <div class="l-footer__address">
+          <p class="l-footer__heading">営業所所在地</p>
+          <div class="l-footer__address-list">
+            <address class="l-footer__address-list-item"> 本社 ：東京都渋谷区恵比寿1-19-19 <br class="no-pc" />恵比寿ビジネスタワー16F（受付） </address>
+            <address class="l-footer__address-list-item"> 名古屋営業所：愛知県名古屋市中区丸の内1-15-20 <br class="no-pc" />ie丸の内ビルディング2F </address>
+            <address class="l-footer__address-list-item"> 北海道営業所：北海道札幌市東区北7条東3丁目 <br class="no-pc" />15-30 SAKURA-N7 M室 </address>
+            <address class="l-footer__address-list-item"> 大阪営業所：大阪府大阪市中央区本町4-5-18 <br class="no-pc" />本町YSビル11階 </address>
+          </div>
+        </div>
+        <div class="l-footer__image l-footer__image--first"><img src="images/top/footer-insurance.webp" alt="生命保険会社を運営主体とする乗合代理店業務品質評価の認定代理店" loading="lazy" /></div>
+        <div class="l-footer__image l-footer__image--second"><img src="images/top/footer-privacy.webp" alt="セキュリティマネジメントシステム「ISO/IEC27001」およびプライパシーマーク「JISQ 15001」" loading="lazy" /></div>
+      </div>
+      <div class="l-footer__copyright">
+        <p class="l-footer__copyright-text">運営会社フィナンシャル・エージェンシーコーポレートサイト</p>
+        <p class="l-footer__copyright-text l-footer__copyright-text--second f-quick">&copy; 2026 Money Color <br class="no-sp" />D30114</p>
+      </div>
+    </footer>
   </body>
+  <script src="https://sdk.form.run/js/v2/embed.js"></script>
 </html>
